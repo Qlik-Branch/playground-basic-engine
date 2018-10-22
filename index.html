@@ -15,8 +15,10 @@
         <div class="col-md-12">
           <h1>Playground Basic Engine Example</h1>
           <p>
-            This example will create a qSocks connection to the selected data source and then log the Global and App objects to the console. Inside the 'ConnectOpenApp' promise you can work with the Engine API.
-            For further documentation on qSocks click <a href="http://branch.qlik.com/#!/project/56728f52d1e497241ae697ca" target="_blank">here</a>
+            This example will create an Enigma.js connection to the Qlik instance determined by the url specified in the config. 
+						Once the session is opened an object called global is returned which represents the Global class.
+						Subsequently the openDoc() method is then used to connect to the desired app. The resulting app object represents the Doc class.
+            For further documentation on Enigma.js click <a href="https://github.com/qlik-oss/enigma.js" target="_blank">here</a>
           </p>
         </div>
     </div>
