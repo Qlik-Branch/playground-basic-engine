@@ -17,7 +17,7 @@ getSchema("12.170.2").then(schema => {
 function getSchema(version) {
 	return new Promise((resolve, reject) => {
 	    const xhr = new XMLHttpRequest()
-	    xhr.open("GET", url)
+	    xhr.open("GET", `/node_modules/enigma.js/schemas/${version}.json`)
 			xhr.setRequestHeader("Access-Control-Allow-Origin","http://localhost:8000");
 	    xhr.onload = () => resolve(JSON.parse(xhr.responseText))
 	    xhr.onerror = () => reject(xhr.statusText)
