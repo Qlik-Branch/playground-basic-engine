@@ -1,4 +1,8 @@
 var config={}
+Playground.notify({
+	title: "Please wait...",
+	message: "Connecting"
+})
 // Change the schema version below as necessary to match your environment
 getSchema("12.170.2").then(schema => {
 	config.schema = schema
